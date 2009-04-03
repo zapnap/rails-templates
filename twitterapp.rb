@@ -152,7 +152,7 @@ development:
   strategy: oauth
   oauth_consumer_key: "#{consumer_key}"
   oauth_consumer_secret: "#{consumer_secret}"
-  base_url: "https://twitter.com"
+  base_url: "http://twitter.com"
   api_timeout: 10
   remember_for: 14 # days
   oauth_callback: "http://localhost:3000/oauth_callback"
@@ -160,7 +160,7 @@ test:
   strategy: oauth
   oauth_consumer_key: "#{consumer_key}"
   oauth_consumer_secret: "#{consumer_secret}"
-  base_url: "https://twitter.com"
+  base_url: "http://twitter.com"
   api_timeout: 10
   remember_for: 14 # days
   oauth_callback: "http://localhost:3000/oauth_callback"
@@ -168,7 +168,7 @@ production:
   strategy: oauth
   oauth_consumer_key: "#{consumer_key}"
   oauth_consumer_secret: "#{consumer_secret}"
-  base_url: "https://twitter.com"
+  base_url: "http://twitter.com"
   api_timeout: 10
   remember_for: 14 # days
 YAML
