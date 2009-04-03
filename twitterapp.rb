@@ -65,7 +65,7 @@ file 'app/views/layouts/master.html.erb', <<-TEMPLATE
         
         <div id='user_bar'>
           <% if logged_in? %>
-            Logged in as <strong><%= current_user.login %></strong>. <%= link_to 'Log out', '/logout' %>
+            <%= image_tag(current_user.profile_image_url, :width => 24, :height => 24) %> Logged in as <strong>@<%= current_user.login %></strong>. <%= link_to 'Log out', '/logout' %>
           <% else %>
             <%= link_to 'Login via Twitter', '/login' %>
           <% end %>
@@ -87,6 +87,8 @@ file 'app/views/static/index.html.erb', <<-TEMPLATE
 <h2>Welcome to Your Twitter Application!</h2>
 
 <p>You have successfully created a Twitter-ready application! To test it out just click on <strong>Login via Twitter</strong> above. You should be taken to Twitter and then back here where it will tell you that you are logged in!</p>
+
+<p>This template doesn't assume anything about how you want to build your application other than that you want to use Twitter authentication to do it, so you can generate any controllers, models, and anything else you like! You can tie it back to Twitter accounts simply by adding associations etc. to <code>app/models/user.rb</code>.</p>
 TEMPLATE
 
 file 'public/stylesheets/sass/master.sass', <<-SASS
@@ -117,6 +119,7 @@ a
   :text-align center
   :font-size 0.8em
   :color #666
+  :padding-bottom 1.5em
 
 #header
   h1
@@ -129,6 +132,8 @@ a
   #user_bar
     :float right
     :margin-top 1.2em
+    img
+      :vertical-align middle
 
 p
   :line-height 150%
@@ -155,7 +160,7 @@ test:
   strategy: oauth
   oauth_consumer_key: "#{consumer_key}"
   oauth_consumer_secret: "#{consumer_secret}"
-  base_url: "http://https://twitter.com"
+  base_url: "https://twitter.com"
   api_timeout: 10
   remember_for: 14 # days
   oauth_callback: "http://localhost:3000/oauth_callback"
