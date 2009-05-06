@@ -110,6 +110,8 @@ body
 a
   :color #06b
   :font-weight bold
+  img
+    :border 0
 
 .clearfix
   :clear both
