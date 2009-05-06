@@ -57,7 +57,7 @@ file 'app/views/layouts/master.html.erb', <<-TEMPLATE
   <body>
     <div id='wrapper'>
       <div id='header'>
-        <h1>#{app_name}</h1>
+        <h1><%= link_to #{app_name}, '/' %></h1>
          
         <div id='user_bar'>
           <% if logged_in? %>
