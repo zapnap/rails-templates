@@ -5,10 +5,6 @@
 # TwitterAuth. This generator will automatically build the
 # basics for an OAuth-based Twitter application and will prompt
 # you for your OAuth credentials.
-#
-# It also includes the basics that I like to use in every app,
-# including SASS for CSS, RSpec, Factory Girl, and Remarkable.
-# Also jRails, can't forget that!
 
 app_name = ask("\nWhat is your application called?")
 
