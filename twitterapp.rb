@@ -35,7 +35,7 @@ git :add => "."
 git :commit => '-m "Initial commit."'
 
 gem 'haml', :version => '>= 2.0.6'
-gem 'oauth', :version => '0.3.2'
+gem 'oauth', :version => '>= 0.3.1'
 gem 'twitter-auth', :lib => 'twitter_auth'
 
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git '
