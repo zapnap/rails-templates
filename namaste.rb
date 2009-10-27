@@ -97,7 +97,7 @@ file 'app/views/layouts/application.html.haml',
     %meta{'http-equiv' => 'Content-type', :content => 'text/html; charset=utf-8'}
     %title NAMASTE!
     = stylesheet_link_tag('application', :media => 'all')
-    = javascript_include_tag('jquery-1.3.2.min.js')
+    = javascript_include_tag('jquery.js')
   %body
     = render(:partial => 'layouts/flashes')
     = yield
