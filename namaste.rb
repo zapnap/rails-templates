@@ -49,7 +49,6 @@ rake('gems:install', :sudo => true)
 ###########
 # PLUGINS
 ###########
-plugin 'asset_packager', :git => 'git://github.com/sbecker/asset_packager.git'
 plugin 'hoptoad_notifier', :git => 'git://github.com/thoughtbot/hoptoad_notifier.git'
 plugin 'authlogic_generator', :git => 'git://github.com/zapnap/authlogic_generator.git'
 
@@ -115,7 +114,7 @@ git :init
 git :add => '.'
 git :commit => "-a -m 'Initial commit'"
 
-generate 'authlogic', '--haml'
+generate 'authlogic', '--rspec', '--haml'
 rake 'db:migrate'
 
 #########
