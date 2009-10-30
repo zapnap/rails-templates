@@ -43,6 +43,7 @@ gem 'rspec', :lib => false, :env => :test
 gem 'rspec-rails', :lib => false, :env => :test
 gem 'cucumber', :lib => false, :env => :test
 gem 'webrat', :lib => false, :env => :test
+gem 'install_theme', :lib => false
 
 rake('gems:install', :sudo => true)
 
@@ -51,6 +52,8 @@ rake('gems:install', :sudo => true)
 ###########
 plugin 'hoptoad_notifier', :git => 'git://github.com/thoughtbot/hoptoad_notifier.git'
 plugin 'authlogic_generator', :git => 'git://github.com/zapnap/authlogic_generator.git'
+plugin 'asset_packager', :git => 'git://github.com/sbecker/asset_packager.git'
+
 
 ##########
 # CONFIG
