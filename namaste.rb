@@ -37,7 +37,7 @@ END
 gem 'haml'
 gem 'authlogic'
 gem 'will_paginate'
-gem 'factory_girl'
+gem 'factory_girl', :env => :test
 gem 'mocha', :env => :test
 gem 'rspec', :lib => false, :env => :test
 gem 'rspec-rails', :lib => false, :env => :test
