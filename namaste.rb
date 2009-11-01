@@ -41,6 +41,7 @@ gem 'factory_girl', :env => :test
 gem 'mocha', :env => :test
 gem 'rspec', :lib => false, :env => :test
 gem 'rspec-rails', :lib => false, :env => :test
+gem 'remarkable_rails', :lib => false, :env => :test
 gem 'cucumber', :lib => false, :env => :test
 gem 'webrat', :lib => false, :env => :test
 gem 'install_theme', :lib => false
